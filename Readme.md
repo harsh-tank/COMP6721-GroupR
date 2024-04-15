@@ -31,11 +31,48 @@ these libraries must be installed in the local machine.
 - [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
 - [Seaborn](https://seaborn.pydata.org/installing.html)
 
-## How to train model:
+Installing the required dependencies and modules
 
-1. Clone the repository using git clone <repository_url> to download the project files locally.
-2. Install necessary dependencies by navigating to the project directory and running pip install -r requirements.txt.
-3. If the model weights are not included, download them from the provided link and place them in the appropriate directory.
-4. Launch Jupyter Notebook and open the notebook file (your_notebook.ipynb) containing the model code.
-5. Run the notebook cells to train the model, ensuring validation steps are included to monitor performance.
-6. Locate the evaluation section in the notebook to view metrics like accuracy, precision, and recall on the validation set.
+```
+pip install -r requirements.txt
+```
+
+### How to train model
+
+1. **Clone the repository:**
+
+```
+git clone https://github.com/Utsav-Virani/COMP6721_Winter2023_GroupO
+```
+
+2. **Install dependencies:**
+
+```
+pip install -r requirements.txt
+```
+
+3. **Launch Jupyter Notebook:**
+
+```
+jupyter notebook
+```
+
+4. **Open and run the notebooks:**
+   - Navigate to the "notebooks" directory in the Jupyter Notebook interface.
+   - Open a `.ipynb` file (notebook).
+   - Run the notebook cells by clicking the "Run" button or using "Shift + Enter".
+
+**Notes:**
+
+- The dataset used might be available on Kaggle or Google Drive. Refer to the notebooks for download instructions (if necessary).
+- Kaggle and Google Colab are convenient options as they eliminate the need to download datasets locally.
+
+### Testing the Model
+
+**Using a Pre-trained Model:**
+
+1. **Open "ModelTesting.ipynb" from the "notebooks" folder.** This notebook contains the testing code.
+2. **Provide the path to the trained model:** Edit the `torch.load()` function to specify the location of the model weights.
+3. **Class label conversion (optional):** The `sat_map` dictionary (defined in the notebook) can be used to convert predicted outputs to class labels for dataset-1. Create similar dictionaries for other datasets, if applicable.
+4. **Image classification:** Provide the path to an image using the `image.open()` method.
+5. **Run the code:** The code will predict the class for the input image.
