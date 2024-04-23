@@ -42,7 +42,7 @@ pip install -r requirements.txt
 1. **Clone the repository:**
 
 ```
-git clone https://github.com/Utsav-Virani/COMP6721_Winter2023_GroupO
+git clone https://github.com/harsh-tank/COMP6721-GroupR.git
 ```
 
 2. **Install dependencies:**
